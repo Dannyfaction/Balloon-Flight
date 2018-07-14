@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: demo6
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: 2.5051851, y: 3.657234e-16, z: -13.866471}
+    subways: 01000000
+    reversedWays: 0e000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 6.0993547, y: 3.4511378e-16, z: -12.938298}
+    - {x: -0.64215755, y: 3.760238e-16, z: -14.330361}
+    segments: []
+  - method: 
+    localPosition: {x: 8.498488, y: 2.719742e-16, z: -9.128629}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 10.059594, y: 2.271987e-16, z: -7.1121187}
+    - {x: 6.692955, y: 3.2353392e-16, z: -11.450672}
+    segments: []
+  - method: 
+    localPosition: {x: 14.091979, y: 1.3582749e-16, z: -2.9971266}
+    subways: 03000000
+    reversedWays: 01000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 15.315423, y: 1.1655711e-16, z: -2.1292648}
+    - {x: 12.868533, y: 1.550979e-16, z: -3.8649883}
+    segments: []
+  - method: 
+    localPosition: {x: 17.765087, y: -6.0019056e-20, z: 3.1227028}
+    subways: 04000000
+    reversedWays: 02000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 17.933144, y: -3.3157e-17, z: 4.6132584}
+    - {x: 17.597034, y: 3.303698e-17, z: 1.6321466}
+    segments: []
+  - method: 
+    localPosition: {x: 14.831983, y: -1.8406505e-16, z: 11.409553}
+    subways: 05000000
+    reversedWays: 03000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 9.454697, y: -2.2551275e-16, z: 13.276191}
+    - {x: 18.620514, y: -1.4668784e-16, z: 9.726233}
+    segments: []
+  - method: 
+    localPosition: {x: 4.3978996, y: -1.2769987e-16, z: 8.87109}
+    subways: 06000000
+    reversedWays: 04000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 1.0473719, y: -7.5964886e-17, z: 6.541154}
+    - {x: 6.5262966, y: -1.5908213e-16, z: 10.284422}
+    segments: []
+  - method: 
+    localPosition: {x: -2.2909708, y: 2.9220891e-18, z: 2.9884007}
+    subways: 07000000
+    reversedWays: 05000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -3.7858748, y: 5.6653745e-18, z: 2.864854}
+    - {x: -0.7960675, y: 1.788563e-19, z: 3.111945}
+    segments: []
+  - method: 
+    localPosition: {x: -10.569108, y: -1.3245384e-16, z: 9.08519}
+    subways: 08000000
+    reversedWays: 06000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -10.703337, y: -2.5043233e-16, z: 14.398469}
+    - {x: -10.38641, y: -5.906225e-18, z: 3.3859925}
+    segments: []
+  - method: 
+    localPosition: {x: -3.49611, y: -2.9319545e-16, z: 16.324348}
+    subways: 09000000
+    reversedWays: 07000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -2.007705, y: -3.0996265e-16, z: 17.079477}
+    - {x: -5.228941, y: -2.710009e-16, z: 15.324796}
+    segments: []
+  - method: 
+    localPosition: {x: 2.613604, y: -4.647788e-16, z: 24.051773}
+    subways: 0a000000
+    reversedWays: 08000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 2.2636147, y: -5.667368e-16, z: 28.643555}
+    - {x: 2.7154303, y: -3.70788e-16, z: 19.818806}
+    segments: []
+  - method: 
+    localPosition: {x: -17.583967, y: -5.0475376e-16, z: 25.852089}
+    subways: 0b000000
+    reversedWays: 09000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -24.53777, y: -4.602047e-16, z: 23.845776}
+    - {x: -6.1901674, y: -5.5194604e-16, z: 27.97744}
+    segments: []
+  - method: 
+    localPosition: {x: -21.271824, y: -1.6167863e-16, z: 10.401358}
+    subways: 0c000000
+    reversedWays: 0a000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -21.132751, y: -1.0976177e-16, z: 8.0632305}
+    - {x: -21.288681, y: -2.0138398e-16, z: 12.1895275}
+    segments: []
+  - method: 
+    localPosition: {x: -20.048862, y: 5.4070156e-17, z: 0.58588505}
+    subways: 0d000000
+    reversedWays: 0b000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -20.27311, y: 1.0857082e-16, z: -1.8686056}
+    - {x: -19.900162, y: 7.520319e-18, z: 2.6823034}
+    segments: []
+  - method: 
+    localPosition: {x: -19.987907, y: 3.9723188e-16, z: -14.769734}
+    subways: 0e000000
+    reversedWays: 0c000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -18.992138, y: 3.951917e-16, z: -14.677852}
+    - {x: -19.915134, y: 3.750863e-16, z: -13.772386}
+    segments: []
+  - method: 
+    localPosition: {x: -8.56006, y: 3.849868e-16, z: -14.218265}
+    subways: 00000000
+    reversedWays: 0d000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -5.7173467, y: 3.841594e-16, z: -14.181003}
+    - {x: -10.920008, y: 3.9643217e-16, z: -14.73372}
+    segments: []
+  resolution: 2

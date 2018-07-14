@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: non physical demo
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: 1.3098695, y: -2.1595058, z: -11.587541}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 1.3863745, y: -2.1595058, z: -9.5890045}
+    segments: []
+  - method: 
+    localPosition: {x: 7.8446856, y: 4.3190117, z: 1.0623415}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 4.58971, y: 4.3190117, z: 4.371662}
+    - {x: 11.09966, y: 4.3190117, z: -2.246979}
+    segments: []
+  - method: 
+    localPosition: {x: -9.154555, y: -2.1595058, z: 10.525199}
+    subways: 
+    reversedWays: 01000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -7.4965687, y: -1.5276365, z: 9.602258}
+    segments: []
+  resolution: 2
