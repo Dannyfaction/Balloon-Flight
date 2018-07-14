@@ -183,7 +183,7 @@ ParticleAnimator:
   localRotationAxis: {x: 0.7, y: 0, z: 0.9}
   sizeGrow: 0
   rndForce: {x: -2.34, y: 0, z: 0}
-  force: {x: 0, y: -2, z: 0}
+  force: {x: 0, y: -10, z: 0}
   damping: 0.1
   stopSimulation: 0
   autodestruct: 1
@@ -213,7 +213,7 @@ ParticleAnimator:
   localRotationAxis: {x: 0.7, y: 0, z: 0.9}
   sizeGrow: 0
   rndForce: {x: -2.34, y: 0, z: 0}
-  force: {x: 0, y: -2, z: 0}
+  force: {x: 0, y: -10, z: 0}
   damping: 0.1
   stopSimulation: 0
   autodestruct: 1
@@ -243,7 +243,7 @@ ParticleAnimator:
   localRotationAxis: {x: 0.7, y: 0, z: 0.9}
   sizeGrow: 0
   rndForce: {x: -2.34, y: 0, z: 0}
-  force: {x: 0, y: -2, z: 0}
+  force: {x: 0, y: -10, z: 0}
   damping: 0.1
   stopSimulation: 0
   autodestruct: 1
@@ -273,7 +273,7 @@ ParticleAnimator:
   localRotationAxis: {x: 0.7, y: 0, z: 0.9}
   sizeGrow: 0
   rndForce: {x: -2.34, y: 0, z: 0}
-  force: {x: 0, y: -2, z: 0}
+  force: {x: 0, y: -10, z: 0}
   damping: 0.1
   stopSimulation: 0
   autodestruct: 1
