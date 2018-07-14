@@ -44,7 +44,6 @@ public class PCInput : PlatformBaseInput
 
             if (TouchState != TouchStates.None)
             {
-                Debug.Log(Input.GetKeyUp(input));
                 Down = !Input.GetKeyUp(input);
                 if (Down)
                 {
@@ -102,7 +101,6 @@ public class PCInput : PlatformBaseInput
                     if (UpInputEvent != null)
                     {
                         //UpInput
-                        Debug.Log("UpInput");
                         UpInputEvent(inputPosition);
                     }
 

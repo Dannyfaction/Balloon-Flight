@@ -13,43 +13,26 @@ public class Cannon : MonoBehaviour {
 
     private float power = 1;
 
-    //private float shootCooldown;
-
-	void Start () {
-		
-	}
-	
-	void Update () {
-        /*
-		if(shootCooldown > 0)
-        {
-            shootCooldown -= Time.deltaTime;
-        }
-        */
-	}
-
     private void SetPower(Vector2 _mouseScreenPosition)
     {
-        if (power < 50f)
+        if (!CutsceneManager.Instance.CurrentlyInCutscene)
         {
-            power += 0.5f;
-            UpdatePowerEvent(power);
+            if (power < 50f)
+            {
+                power += 0.5f;
+                UpdatePowerEvent(power);
+            }
         }
-
     }
 
     private void TriggerShoot(Vector2 _mouseScreenPosition)
     {
         if (!CutsceneManager.Instance.CurrentlyInCutscene)
         {
-            //if (shootCooldown <= 0)
-            //{
-                //shootCooldown = baseShootCooldown;
-                SpawnCannonball();
+            SpawnCannonball();
 
-                power = 0;
-                UpdatePowerEvent(power);
-            //}
+            power = 0;
+            UpdatePowerEvent(power);
         }
     }
 

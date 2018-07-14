@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: Air Balloon Track 1
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: 28.508392, y: -48.644722, z: -176.98708}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 28.831942, y: -48.666134, z: -175.52254}
+    segments: []
+  - method: 
+    localPosition: {x: 32.43158, y: -1.9495544, z: -154.93379}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 33.004295, y: 9.989092, z: -139.234}
+    - {x: 32.10803, y: -17.175755, z: -168.07079}
+    segments: []
+  - method: 
+    localPosition: {x: 14.006134, y: 17.836473, z: -113.99007}
+    subways: 03000000
+    reversedWays: 01000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 13.582887, y: 16.840994, z: -78.86613}
+    - {x: 14.429381, y: 18.831953, z: -127.86951}
+    segments: []
+  - method: 
+    localPosition: {x: 51.4089, y: 14.904518, z: -47.265472}
+    subways: 04000000
+    reversedWays: 02000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 56.193188, y: 14.863571, z: -34.157528}
+    - {x: 46.08431, y: 14.945465, z: -57.99284}
+    segments: []
+  - method: 
+    localPosition: {x: 15.772766, y: 8.873747, z: 26.348785}
+    subways: 05000000
+    reversedWays: 03000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 2.7660408, y: 8.923689, z: 43.76805}
+    - {x: 42.38173, y: 8.823805, z: -0.6259117}
+    segments: []
+  - method: 
+    localPosition: {x: -34.480156, y: 7.9034367, z: 41.967556}
+    subways: 06000000
+    reversedWays: 04000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -40.0952, y: 7.8363323, z: 42.162483}
+    - {x: -17.672726, y: 7.970541, z: 41.77263}
+    segments: []
+  - method: 
+    localPosition: {x: -82.91205, y: -48.293556, z: 46.68834}
+    subways: 
+    reversedWays: 05000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -78.113045, y: -3.7039223, z: 46.49787}
+    segments: []
+  resolution: 2
