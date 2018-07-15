@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: Green Balloon Track 6
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: -140.93831, y: -4.6373773, z: 88.37344}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -141.44344, y: -4.455218, z: 86.972855}
+    segments: []
+  - method: 
+    localPosition: {x: -137.75162, y: -33.959373, z: 56.623795}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -138.25676, y: -35.89343, z: 44.35078}
+    - {x: -137.24648, y: -32.33921, z: 67.502396}
+    segments: []
+  - method: 
+    localPosition: {x: -142.35173, y: -0.4283247, z: 32.692352}
+    subways: 
+    reversedWays: 01000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -144.64314, y: -0.43487835, z: 33.872845}
+    segments: []
+  resolution: 2

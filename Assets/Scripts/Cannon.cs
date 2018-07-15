@@ -10,15 +10,18 @@ public class Cannon : MonoBehaviour {
     [SerializeField] private float baseShootCooldown = 1f;
     [SerializeField] private GameObject cannonballGameObject;
     [SerializeField] private GameObject ejectionPositionGameObject;
-    [SerializeField] private float powerIncrement = 0.25f;
 
-    private float power = 1;
+    [SerializeField] private float minimumPower = 15f;
+    [SerializeField] private float maximumPower = 40f;
+    [SerializeField] private float powerIncrement = 0.15f;
+
+    private float power;
 
     private void SetPower(Vector2 _mouseScreenPosition)
     {
         if (!CutsceneManager.Instance.CurrentlyInCutscene)
         {
-            if (power < 50f)
+            if (power < maximumPower)
             {
                 power += powerIncrement;
                 UpdatePowerEvent(power);
@@ -32,7 +35,7 @@ public class Cannon : MonoBehaviour {
         {
             SpawnCannonball();
 
-            power = 0;
+            power = minimumPower;
             UpdatePowerEvent(power);
         }
     }
@@ -46,6 +49,7 @@ public class Cannon : MonoBehaviour {
 
     private void OnEnable()
     {
+        power = minimumPower;
         PCInput.UpInputEvent += TriggerShoot;
         PCInput.InputEvent += SetPower;
     }

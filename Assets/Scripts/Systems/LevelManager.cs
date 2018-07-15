@@ -41,12 +41,13 @@ public class LevelManager : MonoBehaviour {
         airBalloonFollowSpline.SetSpline(currentSpawnedLevel.transform.GetChild(0).GetComponent<SplineWindow>());
         ScoreManager.Instance.Score = 0;
         ScoreManager.Instance.TotalBalloonsInLevel = currentSpawnedLevel.transform.childCount - 1;
+        AudioManager.Instance.PlayThrusterEffect();
     }
 
     public void RemoveLevel()
     {
-        Debug.Log("destroyed");
         Destroy(currentSpawnedLevel);
+        AudioManager.Instance.StopThrusterEffect();
     }
 
     public void SetLevelIndex(int _levelIndex)

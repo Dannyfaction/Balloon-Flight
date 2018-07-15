@@ -11,7 +11,7 @@ public class UIUpdater : MonoBehaviour {
 
     private void UpdatePowerMeter(float _power)
     {
-        powerMeterImage.fillAmount = _power * 2 / 100;
+        powerMeterImage.fillAmount = (_power-15) * 2 / 50;
     }
 
     private void UpdateScore()

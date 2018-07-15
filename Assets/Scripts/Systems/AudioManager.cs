@@ -20,10 +20,21 @@ public class AudioManager : MonoBehaviour {
     #endregion
 
     [SerializeField] private AudioSource balloonPopEffect;
+    [SerializeField] private AudioSource thrusterEffect;
 
     public void PlayBalloonPopEffect()
     {
         balloonPopEffect.time = 0.1f;
         balloonPopEffect.Play();
+    }
+
+    public void PlayThrusterEffect()
+    {
+        thrusterEffect.Play();
+    }
+
+    public void StopThrusterEffect()
+    {
+        thrusterEffect.Stop();
     }
 }
