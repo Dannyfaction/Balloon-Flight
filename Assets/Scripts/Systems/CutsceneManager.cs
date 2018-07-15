@@ -88,6 +88,8 @@ public class CutsceneManager : MonoBehaviour {
             }
             airBalloon.transform.position = airBalloonStartPosition;
             FollowSpline _followSpline = airBalloon.GetComponent<FollowSpline>();
+            //MoveObject _moveObject = airBalloon.GetComponent<MoveObject>();
+            //_moveObject.speed = 6f;
             _followSpline.StartMoving(0, 0, 0, false);
             LevelManager.Instance.RemoveLevel();
         }

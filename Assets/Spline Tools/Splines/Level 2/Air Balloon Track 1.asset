@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: Air Balloon Track 1
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: 29.69516, y: -48.878216, z: -173.47786}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 6.4432545, y: 3.19812, z: -173.48654}
+    segments: []
+  - method: 
+    localPosition: {x: -54.569824, y: 18.923595, z: -149.91046}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -56.06774, y: 19.00217, z: -149.91914}
+    - {x: -18.323666, y: 10.276337, z: -149.90178}
+    segments: []
+  - method: 
+    localPosition: {x: -107.56132, y: 23.104282, z: -143.01463}
+    subways: 03000000
+    reversedWays: 01000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -119.89983, y: 23.102188, z: -130.04446}
+    - {x: -100.94186, y: 23.106377, z: -149.89906}
+    segments: []
+  - method: 
+    localPosition: {x: -127.118, y: 31.644745, z: -89.389114}
+    subways: 04000000
+    reversedWays: 02000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -125.19144, y: 31.82024, z: -55.46189}
+    - {x: -128.96848, y: 31.46925, z: -120.54891}
+    segments: []
+  - method: 
+    localPosition: {x: -57.107903, y: 20.553665, z: -28.913479}
+    subways: 05000000
+    reversedWays: 03000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -18.059952, y: 20.393326, z: -14.715815}
+    - {x: -91.15145, y: 20.714005, z: -42.903217}
+    segments: []
+  - method: 
+    localPosition: {x: 40.7272, y: 6.163929, z: 19.707363}
+    subways: 06000000
+    reversedWays: 04000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 42.36547, y: 6.2300873, z: 64.27559}
+    - {x: 32.53563, y: 6.0977707, z: -6.366066}
+    segments: []
+  - method: 
+    localPosition: {x: -7.66156, y: -0.09952545, z: 87.85968}
+    subways: 07000000
+    reversedWays: 05000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -39.326397, y: -5.1987896, z: 89.105316}
+    - {x: 10.544287, y: -0.072387695, z: 76.417114}
+    segments: []
+  - method: 
+    localPosition: {x: -88.90872, y: -48.174572, z: 51.43063}
+    subways: 
+    reversedWays: 06000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: -69.794815, y: -26.04197, z: 84.18746}
+    segments: []
+  resolution: 2

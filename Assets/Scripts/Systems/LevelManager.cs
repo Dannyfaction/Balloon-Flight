@@ -30,6 +30,7 @@ public class LevelManager : MonoBehaviour {
 
     [SerializeField] private List<GameObject> levelPrefabs;
     [SerializeField] private FollowSpline airBalloonFollowSpline;
+    [SerializeField] private MoveObject airBalloonMoveObject;
 
     private GameObject currentSpawnedLevel;
 
@@ -42,6 +43,18 @@ public class LevelManager : MonoBehaviour {
         ScoreManager.Instance.Score = 0;
         ScoreManager.Instance.TotalBalloonsInLevel = currentSpawnedLevel.transform.childCount - 1;
         AudioManager.Instance.PlayThrusterEffect();
+
+        switch (levelIndex)
+        {
+            case 1:
+                airBalloonMoveObject.speed = 4f;
+                break;
+            case 2:
+                airBalloonMoveObject.speed = 6f;
+                break;
+            default:
+                break;
+        }
     }
 
     public void RemoveLevel()

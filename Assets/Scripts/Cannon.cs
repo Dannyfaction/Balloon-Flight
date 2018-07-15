@@ -7,7 +7,6 @@ public class Cannon : MonoBehaviour {
 
     public static Action<float> UpdatePowerEvent;
 
-    [SerializeField] private float baseShootCooldown = 1f;
     [SerializeField] private GameObject cannonballGameObject;
     [SerializeField] private GameObject ejectionPositionGameObject;
 
