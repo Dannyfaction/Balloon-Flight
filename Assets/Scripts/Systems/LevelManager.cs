@@ -31,6 +31,7 @@ public class LevelManager : MonoBehaviour {
     [SerializeField] private List<GameObject> levelPrefabs;
     [SerializeField] private FollowSpline airBalloonFollowSpline;
     [SerializeField] private MoveObject airBalloonMoveObject;
+    [SerializeField] private GameObject tutorialGameObject;
 
     private GameObject currentSpawnedLevel;
 
@@ -61,6 +62,7 @@ public class LevelManager : MonoBehaviour {
     {
         Destroy(currentSpawnedLevel);
         AudioManager.Instance.StopThrusterEffect();
+        tutorialGameObject.SetActive(false);
     }
 
     public void SetLevelIndex(int _levelIndex)
