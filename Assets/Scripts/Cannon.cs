@@ -10,6 +10,7 @@ public class Cannon : MonoBehaviour {
     [SerializeField] private float baseShootCooldown = 1f;
     [SerializeField] private GameObject cannonballGameObject;
     [SerializeField] private GameObject ejectionPositionGameObject;
+    [SerializeField] private float powerIncrement = 0.25f;
 
     private float power = 1;
 
@@ -19,7 +20,7 @@ public class Cannon : MonoBehaviour {
         {
             if (power < 50f)
             {
-                power += 0.5f;
+                power += powerIncrement;
                 UpdatePowerEvent(power);
             }
         }

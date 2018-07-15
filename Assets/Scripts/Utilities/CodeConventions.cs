@@ -8,6 +8,9 @@ using UnityEngine;
 /// </summary>
 public class CodeConventions : MonoBehaviour 
 {
+    /// <summary>
+    /// The order of Acces Modifiers are Publics, Statics, SerializeFields, Privates.
+    /// </summary>
     public int PublicTest { get { return privateTest ; } set { privateTest = value; } }
     public int PublicTest2 { get { return privateTest ; } set { privateTest = value; } }
     public static CodeConventions Instance { get { return GetInstance(); } }
@@ -37,6 +40,9 @@ public class CodeConventions : MonoBehaviour
 	}
     #endregion
 
+    /// <summary>
+    /// Constants are written with UPPER_CASING
+    /// </summary>
 	private const string CONST_TEST = "TEST123";
 
     [SerializeField] [Range(0, 93)] private int serializeFieldTest;
@@ -44,7 +50,7 @@ public class CodeConventions : MonoBehaviour
     private int privateTest;
 
     /// <summary>
-    ///  No comments in code, only above the method
+    ///  No comments in code, only above public methods if neccesary
     /// </summary>
     public void PublicExample()
     {

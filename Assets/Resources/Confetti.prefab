@@ -292,9 +292,9 @@ EllipsoidParticleEmitter:
   maxEnergy: 30
   minEmission: 20
   maxEmission: 150
-  worldVelocity: {x: 0, y: 3, z: 0}
+  worldVelocity: {x: 0, y: 8, z: 0}
   localVelocity: {x: 0, y: 1, z: 0}
-  rndVelocity: {x: 0.8, y: 0.5, z: 0}
+  rndVelocity: {x: 3, y: 3, z: 3}
   emitterVelocityScale: -0.05
   tangentVelocity: {x: 0.82, y: 0, z: 0.73}
   angularVelocity: 0
@@ -319,9 +319,9 @@ EllipsoidParticleEmitter:
   maxEnergy: 30
   minEmission: 20
   maxEmission: 150
-  worldVelocity: {x: 0, y: 3, z: 0}
+  worldVelocity: {x: 0, y: 8, z: 0}
   localVelocity: {x: 0, y: 1, z: 0}
-  rndVelocity: {x: 0.8, y: 0.5, z: 0}
+  rndVelocity: {x: 3, y: 3, z: 3}
   emitterVelocityScale: -0.05
   tangentVelocity: {x: 0.82, y: 0, z: 0.73}
   angularVelocity: 0
@@ -346,9 +346,9 @@ EllipsoidParticleEmitter:
   maxEnergy: 30
   minEmission: 20
   maxEmission: 150
-  worldVelocity: {x: 0, y: 3, z: 0}
+  worldVelocity: {x: 0, y: 8, z: 0}
   localVelocity: {x: 0, y: 1, z: 0}
-  rndVelocity: {x: 0.8, y: 0.5, z: 0}
+  rndVelocity: {x: 3, y: 3, z: 3}
   emitterVelocityScale: -0.05
   tangentVelocity: {x: 0.82, y: 0, z: 0.73}
   angularVelocity: 0
@@ -373,9 +373,9 @@ EllipsoidParticleEmitter:
   maxEnergy: 30
   minEmission: 20
   maxEmission: 150
-  worldVelocity: {x: 0, y: 3, z: 0}
+  worldVelocity: {x: 0, y: 8, z: 0}
   localVelocity: {x: 0, y: 1, z: 0}
-  rndVelocity: {x: 0.8, y: 0.5, z: 0}
+  rndVelocity: {x: 3, y: 3, z: 3}
   emitterVelocityScale: -0.05
   tangentVelocity: {x: 0.82, y: 0, z: 0.73}
   angularVelocity: 0
