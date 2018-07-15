@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 79833502}
   - component: {fileID: 79833503}
   - component: {fileID: 79833505}
+  - component: {fileID: 79833506}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -250,9 +251,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6ba6afdc2e757a42a96d1225fb9fd1a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -345,7 +346,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 75140ac2cd14fd745a11fab165542003, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -442,6 +443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   balloonPopEffect: {fileID: 79833503}
   thrusterEffect: {fileID: 79833505}
+  ShootEffect: {fileID: 79833506}
 --- !u!82 &79833505
 AudioSource:
   m_ObjectHideFlags: 0
@@ -453,9 +455,104 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0d7c738a1bb8aba49a96759a59f1507c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.35
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &79833506
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79833500}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bf91838436ec0b746b591e142e51cc74, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1574,6 +1671,62 @@ MonoBehaviour:
     - {x: -69.794815, y: -26.04197, z: 84.18746}
     localHandles:
     - {x: -69.794815, y: -26.04197, z: 84.18746}
+    segments: []
+  resolution: 2
+--- !u!114 &470973432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: Green Balloon Track 10
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: -52.554153, y: 4.4709854, z: 107.345184}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: -51.100647, y: 4.5806656, z: 107.69915}
+    localHandles:
+    - {x: -51.100647, y: 4.5806656, z: 107.69915}
+    segments:
+    - 0.031517837
+  - method: 
+    localPosition: {x: -35.92033, y: 4.2077713, z: 107.64917}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: -34.466824, y: 4.3174515, z: 108.003136}
+    - {x: -37.373837, y: 4.098091, z: 107.295204}
+    localHandles:
+    - {x: -34.466824, y: 4.3174515, z: 108.003136}
+    - {x: -37.373837, y: 4.098091, z: 107.295204}
+    segments:
+    - 0.041573144
+  - method: 
+    localPosition: {x: -35.78101, y: 16.330973, z: 107.764435}
+    subways: 03000000
+    reversedWays: 01000000
+    handles:
+    - {x: -34.325638, y: 16.083513, z: 107.49863}
+    - {x: -37.236378, y: 16.578432, z: 108.03024}
+    localHandles:
+    - {x: -34.325638, y: 16.083513, z: 107.49863}
+    - {x: -37.236378, y: 16.578432, z: 108.03024}
+    segments:
+    - 0.033512548
+  - method: 
+    localPosition: {x: -50.758057, y: 15.714777, z: 107.71472}
+    subways: 
+    reversedWays: 02000000
+    handles:
+    - {x: -52.22041, y: 15.872404, z: 108.00913}
+    localHandles:
+    - {x: -52.22041, y: 15.872404, z: 108.00913}
     segments: []
   resolution: 2
 --- !u!1 &480726123
@@ -3122,87 +3275,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 719754936}
   m_Script: {fileID: 11500000, guid: 53ce6495fb91f0b47944ba9976fa9edf, type: 3}
---- !u!1001 &793767773
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114652579303047130, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
-        type: 2}
-      propertyPath: spline
-      value: 
-      objectReference: {fileID: 685903670}
-    - target: {fileID: 114484402399163178, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
-        type: 2}
-      propertyPath: spline
-      value: 
-      objectReference: {fileID: 1443930658}
-    - target: {fileID: 114775935729227220, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
-        type: 2}
-      propertyPath: spline
-      value: 
-      objectReference: {fileID: 2021497893}
-    - target: {fileID: 114237118578951134, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
-        type: 2}
-      propertyPath: spline
-      value: 
-      objectReference: {fileID: 1693214696}
-    - target: {fileID: 114442418541747536, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
-        type: 2}
-      propertyPath: spline
-      value: 
-      objectReference: {fileID: 585466253}
-    - target: {fileID: 114263213839405594, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
-        type: 2}
-      propertyPath: spline
-      value: 
-      objectReference: {fileID: 716062260}
-    - target: {fileID: 114065000505266052, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
-        type: 2}
-      propertyPath: spline
-      value: 
-      objectReference: {fileID: 415624317}
-    - target: {fileID: 1859336666850478, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &833570850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,6 +4017,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1166218522}
   m_Mesh: {fileID: 4300000, guid: cf1a2d42d42ed9145ab8ec374d063076, type: 3}
+--- !u!114 &1181871762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: Green Balloon Track 9
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: 44.09102, y: 24.885124, z: 84.59311}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: 40.23774, y: 24.984137, z: 86.83783}
+    localHandles:
+    - {x: 40.23774, y: 24.984137, z: 86.83783}
+    segments:
+    - 0.023201508
+  - method: 
+    localPosition: {x: 46.125698, y: 5.291153, z: 83.573875}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 51.7824, y: 5.390167, z: 80.38927}
+    - {x: 33.01853, y: 16.705914, z: 93.41271}
+    localHandles:
+    - {x: 51.7824, y: 5.390167, z: 80.38927}
+    - {x: 33.01853, y: 16.705914, z: 93.41271}
+    segments:
+    - 0.019860825
+  - method: 
+    localPosition: {x: 47.17935, y: 23.646908, z: 82.29687}
+    subways: 
+    reversedWays: 01000000
+    handles:
+    - {x: 57.934048, y: 26.16813, z: 69.23666}
+    localHandles:
+    - {x: 57.934048, y: 26.16813, z: 69.23666}
+    segments: []
+  resolution: 2
 --- !u!1 &1192565841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +4449,7 @@ RectTransform:
   - {fileID: 732251957}
   - {fileID: 1502895155}
   - {fileID: 1899271685}
+  - {fileID: 1964409575}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5430,6 +5547,107 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1467162773}
   m_Mesh: {fileID: 4300000, guid: cf1a2d42d42ed9145ab8ec374d063076, type: 3}
+--- !u!1001 &1487976250
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049247130206438, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484402399163178, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 1443930658}
+    - target: {fileID: 114237118578951134, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 1693214696}
+    - target: {fileID: 114263213839405594, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 716062260}
+    - target: {fileID: 114789799809511482, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 1181871762}
+    - target: {fileID: 114442418541747536, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 585466253}
+    - target: {fileID: 114402518315047080, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 1994956296}
+    - target: {fileID: 114065000505266052, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 415624317}
+    - target: {fileID: 114775935729227220, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 2021497893}
+    - target: {fileID: 114039691054260664, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 470973432}
+    - target: {fileID: 114461267825698004, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 1663627229}
+    - target: {fileID: 114652579303047130, guid: 69fcdc9805ac1ec4f9f2b77721c6448d,
+        type: 2}
+      propertyPath: spline
+      value: 
+      objectReference: {fileID: 685903670}
+    - target: {fileID: 1859336666850478, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 69fcdc9805ac1ec4f9f2b77721c6448d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1492815893
 GameObject:
   m_ObjectHideFlags: 0
@@ -5996,6 +6214,62 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1616715561}
+--- !u!114 &1663627229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: Green Balloon Track 7
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: 16.440277, y: 6.220955, z: -44.300385}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: 36.597416, y: 15.750828, z: -43.971962}
+    localHandles:
+    - {x: 36.597416, y: 15.750828, z: -43.971962}
+    segments:
+    - 0.01707224
+  - method: 
+    localPosition: {x: 17.566422, y: 25.26709, z: -40.12343}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 12.5022955, y: 25.272942, z: -39.795006}
+    - {x: 27.220715, y: 25.308569, z: -40.45185}
+    localHandles:
+    - {x: 12.5022955, y: 25.272942, z: -39.795006}
+    - {x: 27.220715, y: 25.308569, z: -40.45185}
+    segments:
+    - 0.022825291
+  - method: 
+    localPosition: {x: 16.524794, y: 6.447135, z: -43.990456}
+    subways: 03000000
+    reversedWays: 01000000
+    handles:
+    - {x: 17.508884, y: 6.470617, z: -43.85738}
+    - {x: 1.3395786, y: 18.844097, z: -44.12353}
+    localHandles:
+    - {x: 17.508884, y: 6.470617, z: -43.85738}
+    - {x: 1.3395786, y: 18.844097, z: -44.12353}
+    segments:
+    - 0.020724747
+  - method: 
+    localPosition: {x: 18.383608, y: 26.126417, z: -39.553257}
+    subways: 
+    reversedWays: 02000000
+    handles:
+    - {x: 39.089226, y: 18.846235, z: -39.920883}
+    localHandles:
+    - {x: 39.089226, y: 18.846235, z: -39.920883}
+    segments: []
+  resolution: 2
 --- !u!1 &1672991368
 GameObject:
   m_ObjectHideFlags: 0
@@ -7427,6 +7701,124 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1930701709}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1964409574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1964409575}
+  - component: {fileID: 1964409577}
+  - component: {fileID: 1964409576}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1964409575
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964409574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 1240091012}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 770.6, y: 495.2}
+  m_SizeDelta: {x: 1000, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1964409576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964409574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e199a02e182fd8947af9dead45b5b740, type: 3}
+    m_FontSize: 70
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 7
+    m_MaxSize: 70
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Made by Danny Kruiswijk
+--- !u!222 &1964409577
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964409574}
+--- !u!114 &1994956296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f13b5120f2ba4f82b355eb1e305e9, type: 3}
+  m_Name: Green Balloon Track 8
+  m_EditorClassIdentifier: 
+  waypoints:
+  - method: 
+    localPosition: {x: 46.73769, y: 6.4568863, z: 84.20351}
+    subways: 01000000
+    reversedWays: 
+    handles:
+    - {x: 34.905712, y: 20.230795, z: 91.2849}
+    localHandles:
+    - {x: 34.905712, y: 20.230795, z: 91.2849}
+    segments:
+    - 0.021782298
+  - method: 
+    localPosition: {x: 45.52366, y: 24.946453, z: 82.802284}
+    subways: 02000000
+    reversedWays: 00000000
+    handles:
+    - {x: 46.49008, y: 25.085476, z: 81.66356}
+    - {x: 44.557236, y: 24.80743, z: 83.94101}
+    localHandles:
+    - {x: 46.49008, y: 25.085476, z: 81.66356}
+    - {x: 44.557236, y: 24.80743, z: 83.94101}
+    segments:
+    - 0.0246803
+  - method: 
+    localPosition: {x: 46.464203, y: 6.4982605, z: 82.94172}
+    subways: 
+    reversedWays: 01000000
+    handles:
+    - {x: 59.02183, y: 19.19583, z: 71.75291}
+    localHandles:
+    - {x: 59.02183, y: 19.19583, z: 71.75291}
+    segments: []
+  resolution: 2
 --- !u!1 &2004013930
 GameObject:
   m_ObjectHideFlags: 0

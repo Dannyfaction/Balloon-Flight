@@ -50,7 +50,7 @@ public class LevelManager : MonoBehaviour {
                 airBalloonMoveObject.speed = 4f;
                 break;
             case 2:
-                airBalloonMoveObject.speed = 6f;
+                airBalloonMoveObject.speed = 4f;
                 break;
             default:
                 break;

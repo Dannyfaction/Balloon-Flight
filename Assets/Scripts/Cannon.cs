@@ -44,6 +44,7 @@ public class Cannon : MonoBehaviour {
         GameObject _spawnedCannonball = GameObject.Instantiate(cannonballGameObject, ejectionPositionGameObject.transform.position, Quaternion.identity);
         Cannonball _cannonball = _spawnedCannonball.GetComponent<Cannonball>();
         _cannonball.Speed = power;
+        AudioManager.Instance.PlayShootEffect();
     }
 
     private void OnEnable()
