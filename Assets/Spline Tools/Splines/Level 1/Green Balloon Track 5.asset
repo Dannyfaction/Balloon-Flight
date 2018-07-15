@@ -23,11 +23,22 @@ MonoBehaviour:
     segments: []
   - method: 
     localPosition: {x: 11.578888, y: 26.24363, z: -20.951004}
-    subways: 
+    subways: 02000000
     reversedWays: 00000000
     handles:
     - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
     localHandles:
+    - {x: 12.345817, y: 26.243122, z: -22.24012}
     - {x: 10.811959, y: 26.244137, z: -19.661888}
+    segments: []
+  - method: 
+    localPosition: {x: 19.58847, y: 32.13221, z: -33.714752}
+    subways: 
+    reversedWays: 01000000
+    handles:
+    - {x: 0, y: 0, z: 0}
+    localHandles:
+    - {x: 19.431715, y: 24.158302, z: -33.464954}
     segments: []
   resolution: 2

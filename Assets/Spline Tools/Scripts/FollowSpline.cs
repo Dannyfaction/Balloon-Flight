@@ -20,6 +20,8 @@ namespace SplineTool
     /// </summary>
     public class FollowSpline : MonoBehaviour
     {
+
+        public static Action FinishedFollowingSpline;
         //public BoatMovementStream BoatMovementStream;
         #region variables
         public enum ControlType { PlayerControlled, AIControlled, Random }
@@ -182,7 +184,17 @@ namespace SplineTool
         void GoThrow()
         {
             // if this point doesn't have subway (next point) to go to end this movement
-            if (!CheckCanMove()) return;
+            if (!CheckCanMove())
+            {
+                Debug.Log("Spline is not valid");
+                if (FinishedFollowingSpline != null)
+                {
+                    FinishedFollowingSpline();
+                }
+
+                CutsceneManager.Instance.SwitchCutSceneState();
+                return;
+            }
 
             //get our pos in the spline
             progressPoint = GetCurrPos(0);
@@ -220,7 +232,10 @@ namespace SplineTool
                 SetSubway();
                 return false;
             }
-            if (!spline.IsValid(_currPoint)) return false;
+            if (!spline.IsValid(_currPoint))
+            {
+                return false;
+            }
             if (reverse ? spline[_currPoint].reversedWays.Length <= _currSubway : spline[_currPoint].subways.Length <= _currSubway)
             {
                 _currSubway = 0;

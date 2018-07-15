@@ -12,6 +12,8 @@ public class Balloon : MonoBehaviour {
         if (_collision.transform.tag == "Cannonball")
         {
             GameObject _confetti = GameObject.Instantiate(confettiPrefabGameObject, transform.position, Quaternion.identity);
+            ScoreManager.Instance.Score++;
+            AudioManager.Instance.PlayBalloonPopEffect();
             Destroy(gameObject);
         }
 

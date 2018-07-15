@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SplineTool;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,12 +23,16 @@ public class CutsceneManager : MonoBehaviour {
     }
     #endregion
 
-    [SerializeField] private List<ScriptedAnimationController> scriptedAnimationControllers;
+    [SerializeField] private ScriptedAnimationController scriptedAnimationController;
 
     [SerializeField] private GameObject airBalloon;
+    private Vector3 airBalloonStartPosition;
+    [SerializeField] private GameObject gameCutsceneCanvas;
 
     [SerializeField] private GameObject cutsceneCamera;
     [SerializeField] private GameObject cutsceneCanvas;
+
+    [SerializeField] private List<GameObject> gameOverCanvasObjects;
 
     public bool CurrentlyInCutscene { 
         get
@@ -44,6 +49,7 @@ public class CutsceneManager : MonoBehaviour {
 
 	private void Awake () {
         currentlyInCutscene = true;
+        airBalloonStartPosition = airBalloon.transform.position;
     }
 
     /// <summary>
@@ -56,10 +62,7 @@ public class CutsceneManager : MonoBehaviour {
 
     private void StartScreenFadeIn()
     {
-        for (int i = 0; i < scriptedAnimationControllers.Count; i++)
-        {
-            scriptedAnimationControllers[i].StartAnimation(ScriptedAnimationType.In, InBetweenFades);
-        }
+        scriptedAnimationController.StartAnimation(ScriptedAnimationType.In, InBetweenFades);
     }
 
     private void InBetweenFades()
@@ -70,32 +73,34 @@ public class CutsceneManager : MonoBehaviour {
             cutsceneCamera.SetActive(false);
             cutsceneCanvas.SetActive(false);
             airBalloon.SetActive(true);
+            gameCutsceneCanvas.SetActive(true);
             LevelManager.Instance.SpawnLevel();
         }
         else
         {
             airBalloon.SetActive(false);
+            gameCutsceneCanvas.SetActive(false);
             cutsceneCamera.SetActive(true);
             cutsceneCanvas.SetActive(true);
+            for (int i = 0; i < gameOverCanvasObjects.Count; i++)
+            {
+                gameOverCanvasObjects[i].SetActive(true);
+            }
+            airBalloon.transform.position = airBalloonStartPosition;
+            FollowSpline _followSpline = airBalloon.GetComponent<FollowSpline>();
+            _followSpline.StartMoving(0, 0, 0, false);
+            LevelManager.Instance.RemoveLevel();
         }
     }
 
     private void StartScreenFadeOut()
     {
-        for (int i = 0; i < scriptedAnimationControllers.Count; i++)
-        {
-            if (scriptedAnimationControllers[i].transform.root.gameObject.activeSelf)
-            {
-                scriptedAnimationControllers[i].StartAnimation(ScriptedAnimationType.Out, FadeScreenCompletion);
-            }
+        scriptedAnimationController.StartAnimation(ScriptedAnimationType.Out, FadeScreenCompletion);
 
-        }
     }
 
     private void FadeScreenCompletion()
     {
         currentlyInCutscene = !currentlyInCutscene;
     }
-
-
 }
